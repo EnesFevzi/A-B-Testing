@@ -14,8 +14,8 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.expand_frame_repr', False)
 pd.set_option('display.float_format', lambda x: '%.5f' % x)
 
-dataframe_control = pd.read_excel("C:/Users/Enes Fevzi/Desktop/measurement_problems-220803-201851/Case 1/ABTesti-221116-002840/ABTesti/ab_testing.xlsx" , sheet_name="Control Group")
-dataframe_test = pd.read_excel("C:/Users/Enes Fevzi/Desktop/measurement_problems-220803-201851/Case 1/ABTesti-221116-002840/ABTesti/ab_testing.xlsx" , sheet_name="Control Group")
+dataframe_control = pd.read_excel("ABTesti/ab_testing.xlsx" , sheet_name="Control Group")
+dataframe_test = pd.read_excel("ABTesti/ab_testing.xlsx" , sheet_name="Control Group")
 
 
 df_control = dataframe_control.copy()
@@ -54,8 +54,6 @@ df.tail()
 #####################################################
 #A/B Testinin Hipotezinin Tanımlanması
 #####################################################
-
-# Hipotezi tanımlayınız.
 
 # H0 : M1 = M2 (Kontrol grubu ve test grubu satın alma ortalamaları arasında fark yoktur.)
 # H1 : M1!= M2 (Kontrol grubu ve test grubu satın alma ortalamaları arasında fark vardır.)
